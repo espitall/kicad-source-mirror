@@ -721,7 +721,7 @@ unsigned MODULE::GetUniquePadCount( INCLUDE_NPTH_T aIncludeNPTH ) const
 {
     std::set<int> usedNumbers;
     
-    // Create a set of usedpad numbers
+    // Create a set of used pad numbers
     for( D_PAD* pad = Pads(); pad; pad = pad->Next() )
     {
         if( !aIncludeNPTH )
@@ -1214,7 +1214,7 @@ wxString MODULE::GetNextPadName( bool aFillSequenceGaps ) const
 {
     std::set<int> usedNumbers;
 
-    // Create a set of usedpad numbers
+    // Create a set of used pad numbers
     for( D_PAD* pad = Pads(); pad; pad = pad->Next() )
     {
         int padNumber = getTrailingInt( pad->GetPadName() );
